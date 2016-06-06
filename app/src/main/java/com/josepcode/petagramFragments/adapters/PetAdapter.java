@@ -1,4 +1,4 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.josepcode.petagramFragments.pojo.Pet;
+import com.josepcode.petagramFragments.R;
 
 import java.util.ArrayList;
 
@@ -24,7 +27,7 @@ public class PetAdapter extends RecyclerView.Adapter <PetAdapter.PetViewHolder> 
 
     @Override
     public PetViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_pet_cardview,parent,false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_pet,parent,false);
         return new PetViewHolder(v);
     }
 

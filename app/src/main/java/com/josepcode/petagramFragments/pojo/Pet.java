@@ -1,4 +1,4 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments.pojo;
 
 /**
  * Created by JR on 30/05/2016.

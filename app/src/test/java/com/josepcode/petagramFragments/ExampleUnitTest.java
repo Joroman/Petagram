@@ -1,4 +1,4 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments;
 
 import org.junit.Test;
 

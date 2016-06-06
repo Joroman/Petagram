@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Petagram</string>
+    <string name="contacto">Contacto</string>
+    <string name="acerca">Acerca de</string>
+    <string name="hint_name">Nombre Completo</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_telefono">Telefono</string>
+    <string name="hint_descripcion">Descricpion Contacto</string>
+    <string name="enviar_comentario">Enviar Comentario</string>
+    <string name="bio_desarrollador">Me llamo Josep Roman vivo en España concretamente en Barcelona, soy ingeniero
+        de telecomunicaciones y un master MBA. Después de trabajar 10 años en la consultoria tecnológica como desarrollador java
+        y los últimos años como gerente. Estoy realizando este curso para reciclar mi parte mas tecnológica.</string>
 </resources>

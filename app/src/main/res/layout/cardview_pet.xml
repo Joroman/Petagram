@@ -7,6 +7,9 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/card_view_margin_boton"
     card_view:cardCornerRadius="@dimen/corner_radius_card_view"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+
     >
 
     <LinearLayout
@@ -16,7 +19,8 @@
         android:paddingTop="@dimen/cv_linear_layout_padding"
         android:paddingEnd="@dimen/cv_linear_layout_padding"
         android:paddingRight="@dimen/cv_linear_layout_padding_right"
-        android:paddingLeft="@dimen/cv_linear_layout_padding">
+        android:paddingLeft="@dimen/cv_linear_layout_padding"
+       >
 
         <LinearLayout
             android:id="@+id/id_ll_pet_foto"
@@ -25,7 +29,8 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/id_ll_pet_foto_pading"
             android:paddingTop="@dimen/id_ll_pet_foto_pading"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            >
 
             <ImageView
                 android:id="@+id/iv_foto_pet"

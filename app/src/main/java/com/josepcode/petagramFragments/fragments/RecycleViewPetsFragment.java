@@ -1,53 +1,43 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments.fragments;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageButton;
+import android.view.ViewGroup;
+
+import com.josepcode.petagramFragments.R;
+import com.josepcode.petagramFragments.adapters.PetAdapter;
+import com.josepcode.petagramFragments.pojo.Pet;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-
+/**
+ * Created by JR on 06/06/2016.
+ */
+public class RecycleViewPetsFragment extends Fragment{
     ArrayList<Pet> mPetArrayList;
     private RecyclerView mRVListaPets;
-    private ImageButton mIBEstrella;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //Primero cargamos la ToolBar
-        Toolbar mMiActionBar=(Toolbar)findViewById(R.id.miActionBar);
-        setSupportActionBar(mMiActionBar);
-
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v= inflater.inflate(R.layout.fragment_recycleview_pets,container,false);
         //Cojemos el objeto RecycleView para pode trabajar con el a nivel de codigo java
-        mRVListaPets=(RecyclerView)findViewById(R.id.rv_Contactos);
+        mRVListaPets=(RecyclerView)v.findViewById(R.id.rvMascotas);
 
         //Creamos LinearLayout Manager
-        LinearLayoutManager llm =new LinearLayoutManager(this);
+        LinearLayoutManager llm =new LinearLayoutManager(v.getContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         mRVListaPets.setLayoutManager(llm);
 
         inicializarListaPets();
         inicializarAdapter();
 
-        //ImageButton
-        mIBEstrella=(ImageButton)findViewById(R.id.ib_estrella);
-        mIBEstrella.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RankingPetsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
+        return v;
     }
 
     public void inicializarAdapter(){
@@ -66,3 +56,4 @@ public class MainActivity extends AppCompatActivity {
         mPetArrayList.add(new Pet(R.drawable.perro7,"Josty",1));
     }
 }
+

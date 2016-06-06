@@ -1,4 +1,4 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

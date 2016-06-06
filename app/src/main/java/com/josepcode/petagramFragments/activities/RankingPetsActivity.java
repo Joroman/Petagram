@@ -1,10 +1,14 @@
-package com.josepcode.petagram;
+package com.josepcode.petagramFragments.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
+import com.josepcode.petagramFragments.R;
+import com.josepcode.petagramFragments.adapters.PetAdapter;
+import com.josepcode.petagramFragments.pojo.Pet;
 
 import java.util.ArrayList;
 
